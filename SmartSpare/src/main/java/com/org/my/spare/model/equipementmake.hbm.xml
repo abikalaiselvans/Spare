@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-mapping PUBLIC  
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+      
+    <hibernate-mapping>  
+    <class name="com.org.my.spare.model.EquipementMake" table="spare_m_equipement_make">  
+         <id name="rowid" type="java.lang.Integer">
+            <column name="INT_MAKEID" />
+        </id>
+      
+        <property name="name" type="string">
+            <column name="CHR_MAKENAME"  />
+        </property>
+        
+        <property name="description" type="string">
+            <column name="CHR_DESC"  />
+        </property>
+        
+        <property name="userid" type="string">
+            <column name="CHR_USRNAME"  />
+        </property>
+        
+        <property name="userdate" type="java.util.Date">
+            <column name="DT_UPDATEDATE"  />
+        </property>
+        
+        <property name="status" type="string">
+            <column name="CHR_UPDATESTATUS"  />
+        </property>
+    </class>  
+                
+    </hibernate-mapping>  
